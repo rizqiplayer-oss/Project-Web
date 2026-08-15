@@ -385,4 +385,152 @@
   <!-- Interactive JavaScript -->
   <script src="script.js"></script>
 </body>
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+  // 1. Scroll Reveal Intersection Observer
+  const revealElements = document.querySelectorAll(".reveal-on-scroll");
+  const revealObserver = new IntersectionObserver(
+    (entries, observer) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("is-revealed");
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.1 }
+  );
+  revealElements.forEach((el) => revealObserver.observe(el));
+
+  // 2. Animated Stats Counter
+  const counters = document.querySelectorAll(".counter");
+  let animated = false;
+  const statsSection = document.querySelector(".frame-7");
+
+  const counterObserver = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting && !animated) {
+          animated = true;
+          counters.forEach((counter) => {
+            const target = parseFloat(counter.getAttribute("data-target"));
+            const decimals = parseInt(counter.getAttribute("data-decimals") || "0", 10);
+            const suffix = counter.getAttribute("data-suffix") || "";
+            const duration = 2000;
+            const startTime = performance.now();
+
+            function updateCounter(currentTime) {
+              const elapsed = currentTime - startTime;
+              const progress = Math.min(elapsed / duration, 1);
+              // easeOutQuart
+              const easeProgress = 1 - Math.pow(1 - progress, 4);
+              const currentVal = target * easeProgress;
+
+              counter.innerText =
+                (decimals > 0 ? currentVal.toFixed(decimals) : Math.floor(currentVal).toLocaleString()) + suffix;
+
+              if (progress < 1) {
+                requestAnimationFrame(updateCounter);
+              } else {
+                counter.innerText = (decimals > 0 ? target.toFixed(decimals) : target.toLocaleString()) + suffix;
+              }
+            }
+            requestAnimationFrame(updateCounter);
+          });
+        }
+      });
+    },
+    { threshold: 0.3 }
+  );
+  if (statsSection) counterObserver.observe(statsSection);
+
+  // 3. Interactive Stepper Timeline ("How It Works")
+  const stepItems = document.querySelectorAll(".step-item");
+  stepItems.forEach((step) => {
+    step.addEventListener("mouseenter", () => {
+      stepItems.forEach((s) => s.classList.remove("active"));
+      step.classList.add("active");
+    });
+  });
+
+  // 4. Pricing Switcher (Monthly vs Annual)
+  const billingToggle = document.getElementById("billing-toggle");
+  const monthlyLabel = document.getElementById("monthly-label");
+  const annualLabel = document.getElementById("annual-label");
+  const priceVals = document.querySelectorAll(".price-val");
+  let isAnnual = false;
+
+  if (billingToggle) {
+    const handleToggle = () => {
+      isAnnual = !isAnnual;
+      billingToggle.classList.toggle("active", isAnnual);
+      monthlyLabel.classList.toggle("active", !isAnnual);
+      annualLabel.classList.toggle("active", isAnnual);
+
+      priceVals.forEach((p) => {
+        p.style.opacity = "0";
+        setTimeout(() => {
+          p.innerText = isAnnual ? p.getAttribute("data-annual") : p.getAttribute("data-monthly");
+          p.style.opacity = "1";
+        }, 150);
+      });
+    };
+
+    billingToggle.addEventListener("click", handleToggle);
+    document.querySelector(".pricing-toggle-wrap").addEventListener("click", (e) => {
+      if (e.target !== billingToggle && !billingToggle.contains(e.target)) {
+        handleToggle();
+      }
+    });
+  }
+
+  // 5. Pricing Card CTA Feedback
+  const pricingButtons = document.querySelectorAll(".pricing-cta");
+  pricingButtons.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      showToast("🚀 Paket dipilih! Mengarahkan ke formulir aktivasi...");
+    });
+  });
+
+  // 6. 3D Parallax Tilt Effect on Hero Cards
+  const heroGroup = document.querySelector(".hero-cards-container");
+  if (heroGroup) {
+    heroGroup.addEventListener("mousemove", (e) => {
+      const { left, top, width, height } = heroGroup.getBoundingClientRect();
+      const x = (e.clientX - left) / width - 0.5;
+      const y = (e.clientY - top) / height - 0.5;
+
+      document.querySelectorAll(".tilt-card").forEach((card, idx) => {
+        const factor = (idx + 1) * 8;
+        card.style.transform = `translate3d(${x * factor}px, ${y * factor}px, 0)`;
+      });
+    });
+
+    heroGroup.addEventListener("mouseleave", () => {
+      document.querySelectorAll(".tilt-card").forEach((card) => {
+        card.style.transform = "";
+      });
+    });
+  }
+});
+
+// Helper: Smooth Scroll
+function scrollToSection(selector) {
+  const el = document.querySelector(selector);
+  if (el) {
+    el.scrollIntoView({ behavior: "smooth", block: "start" });
+  }
+}
+
+// Helper: Toast Notification
+function showToast(message) {
+  const toast = document.getElementById("toast-notify");
+  if (!toast) return;
+  toast.innerText = message;
+  toast.classList.add("show");
+  setTimeout(() => {
+    toast.classList.remove("show");
+  }, 3500);
+}
+</script>
 </html>
