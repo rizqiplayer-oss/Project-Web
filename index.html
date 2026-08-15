@@ -1,536 +1,327 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CLEANFLOW - All-in-One Business Management Platform</title>
-  
-  <!-- Google Fonts: Inter -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
-
-  <link rel="stylesheet" href="index.css" />
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="CLEANFLOW is an all-in-one business management platform for cleaning service businesses.">
+<title>CLEANFLOW — Run Your Cleaning Business Smarter</title>
+<link rel="stylesheet" href="globals.css">
+<link rel="stylesheet" href="styleguide.css">
+<link rel="stylesheet" href="index.css">
 </head>
-<body>
-  <div class="macbook-pro">
-    <!-- Background Decor -->
-    <div class="rectangle"></div>
-    <div class="div"></div>
-    <div class="rectangle-2"></div>
-    <div class="rectangle-3"></div>
-    <div class="rectangle-4"></div>
-    <div class="rectangle-5"></div>
-    <div class="rectangle-6"></div>
-    <div class="rectangle-7"></div>
-    <div class="ellipse ambient-glow"></div>
-
-    <!-- Navigation Bar -->
-    <header class="frame reveal-on-scroll">
-      <nav class="navbar">
-        <a href="#product" class="text-wrapper nav-link">Product</a>
-        <a href="#features" class="text-wrapper nav-link">Features</a>
-        <a href="#solutions" class="text-wrapper nav-link">Solutions</a>
-        <a href="#pricing" class="text-wrapper nav-link">Pricing</a>
-        <a href="#resources" class="text-wrapper nav-link">Resources</a>
-      </nav>
-      <div class="frame-2">
-        <button class="text-wrapper-2 btn-login">Log in</button>
-        <button class="text-wrapper-3 btn-get-started">Get Started</button>
-      </div>
-    </header>
-
-    <!-- Hero Section -->
-    <section class="frame-3 reveal-on-scroll">
-      <div class="frame-4">
-        <div class="text-wrapper-4 badge-chip">ALL-IN-ONE BUSINESS MANAGEMENT PLATFORM</div>
-        <h1 class="p">Run Your Cleaning Business Smarter</h1>
-        <div class="text-wrapper-5">Otomatisasi operasional, pantau omzet, dan kelola pelanggan dari satu aplikasi.</div>
-      </div>
-      <div class="frame-5">
-        <button class="div-wrapper interactive-btn" onclick="scrollToSection('.frame-39')">
-          <span class="text-wrapper-6">Start Free</span>
-        </button>
-        <button class="frame-6 interactive-btn-secondary" onclick="scrollToSection('.frame-27')">
-          <span class="text-wrapper-6">Explore Features →</span>
-        </button>
-      </div>
-    </section>
-
-    <!-- Hero Interactive Tilt Cards -->
-    <div class="group hero-cards-container">
-      <div class="rectangle-8 tilt-card floating-1"></div>
-      <div class="rectangle-9 tilt-card floating-2"></div>
-      <div class="rectangle-10 tilt-card floating-3"></div>
-      <div class="rectangle-11 tilt-card floating-4"></div>
-    </div>
-    <div class="rectangle-12 tilt-card floating-center"></div>
-    <div class="rectangle-13"></div>
-    <img class="img" src="img/ellipse-20.svg" alt="" />
-
-    <!-- Stats Section with Counter -->
-    <section class="frame-7 reveal-on-scroll">
-      <div class="frame-8">
-        <p class="text-wrapper-7">Built for businesses that keep things moving</p>
-        <p class="text-wrapper-8">From growing local shops to multi-outlet operations, CLEANFLOW helps businesses stay organized, efficient, and ready to scale</p>
-      </div>
-      <div class="frame-9">
-        <div class="frame-10 stat-box">
-          <div class="text-wrapper-9 counter" data-target="1284" data-suffix="+">0</div>
-          <div class="text-wrapper-8">Orders Managed</div>
-        </div>
-        <div class="frame-10 stat-box">
-          <div class="text-wrapper-9 counter" data-target="98.6" data-decimals="1" data-suffix="%">0%</div>
-          <div class="text-wrapper-8">Order Accuracy</div>
-        </div>
-        <div class="frame-10 stat-box">
-          <div class="text-wrapper-9 counter" data-target="32" data-suffix="+">0</div>
-          <div class="text-wrapper-8">Active Businesses</div>
-        </div>
-        <div class="frame-11 stat-box">
-          <div class="text-wrapper-9 counter" data-target="12" data-suffix="">0</div>
-          <div class="text-wrapper-8">Service Categories</div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Problem Statement Section -->
-    <section class="frame-12 reveal-on-scroll">
-      <div class="frame-13">
-        <p class="text-wrapper-10">Your business shouldn&#39;t run on notebooks and spreadsheets.</p>
-        <p class="text-wrapper-11">When orders grow, manual processes start getting expensive</p>
-      </div>
-      <div class="frame-14">
-        <div class="text-wrapper-12 problem-item">❌ Lost order information</div>
-        <div class="text-wrapper-13 problem-item">❌ Difficult item tracking</div>
-        <div class="text-wrapper-13 problem-item">❌ Manual payment records</div>
-        <div class="text-wrapper-13 problem-item">❌ Customer data scattered everywhere</div>
-        <p class="text-wrapper-13 problem-item">❌ No clear view of business performance</p>
-      </div>
-    </section>
-
-    <!-- Value Prop Section -->
-    <section class="frame-15 reveal-on-scroll">
-      <div class="rectangle-14 interactive-preview-box"></div>
-      <div class="frame-16">
-        <div class="frame-17">
-          <div class="text-wrapper-14">One system. Complete control</div>
-          <p class="CLEANFLOW-brings">CLEANFLOW brings your entire operation into one connected workspace — from the moment an item arrives until it&#39;s picked up.</p>
-        </div>
-        <div class="frame-18 interactive-pill">
-          <div class="text-wrapper-15">Orders. Customers. Payments. Analytics.</div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Interactive Services Carousel / Grid -->
-    <section class="frame-19 reveal-on-scroll">
-      <div class="frame-20">
-        <div class="text-wrapper-16">BUILT FOR YOUR BUSINESS</div>
-        <div class="text-wrapper-17">One platform. Every service.</div>
-        <p class="text-wrapper-18">Whether you clean shoes, helmets, strollers, luggage, or something completely different, CLEANFLOW adapts to the way your business works.</p>
-      </div>
-      <div class="frame-21">
-        <div class="frame-22 interactive-card">
-          <div class="service-icon-bubble">👟</div>
-          <div class="text-wrapper-19">Shoe Care</div>
-          <p class="text-wrapper-20">Deep cleaning, restoration, and maintenance.</p>
-        </div>
-        <div class="frame-22 interactive-card">
-          <div class="service-icon-bubble">🪖</div>
-          <div class="text-wrapper-19">Helmet Care</div>
-          <p class="text-wrapper-20">Track cleaning and treatment orders with ease.</p>
-        </div>
-        <div class="frame-22 interactive-card">
-          <div class="service-icon-bubble">👶</div>
-          <div class="text-wrapper-19">Stroller Care</div>
-          <p class="text-wrapper-20">Manage every item from intake to pickup.</p>
-        </div>
-        <div class="frame-22 interactive-card">
-          <div class="service-icon-bubble">🧳</div>
-          <div class="text-wrapper-19">Luggage Care</div>
-          <p class="text-wrapper-20">Keep high-value items organized and traceable.</p>
-        </div>
-        <div class="frame-22 interactive-card">
-          <div class="service-icon-bubble">👡</div>
-          <div class="text-wrapper-19">Sandal</div>
-          <p class="text-wrapper-20">Manage multiple services under one system.</p>
-        </div>
-        <div class="frame-22 interactive-card">
-          <div class="service-icon-bubble">✨</div>
-          <div class="text-wrapper-21">Custom Services</div>
-          <p class="text-wrapper-20">Create your own service types, pricing, and workflows.</p>
-        </div>
-      </div>
-      <div class="frame-23">
-        <button class="frame-24 interactive-btn">
-          <span class="text-wrapper-22">Create your own workflow →</span>
-        </button>
-        <img class="frame-25" src="img/frame-39.svg" alt="" />
-      </div>
-    </section>
-
-    <img class="frame-26" src="img/frame-26.svg" alt="" />
-
-    <!-- Feature Showcase -->
-    <div class="text-wrapper-23 reveal-on-scroll">FEATURE SHOWCASE</div>
-
-    <div class="frame-28 showcase-card reveal-on-scroll">
-      <div class="rectangle-15"></div>
-      <div class="text-wrapper-25">FINANCIAL REPORTING</div>
-      <p class="text-wrapper-26">Get a clearer picture of your business finances and make every financial decision with confidence.</p>
-      <div class="ellipse-2"><img class="image" src="img/image-1-4.png" alt="" /></div>
-    </div>
-
-    <div class="frame-29 showcase-card reveal-on-scroll">
-      <div class="rectangle-15"></div>
-      <div class="text-wrapper-25">INVENTORY REPORTING</div>
-      <p class="text-wrapper-26">Monitor inventory levels, usage, and supply needs to keep your daily operations running smoothly.</p>
-      <div class="ellipse-2"><img class="image" src="img/image-1.png" alt="" /></div>
-    </div>
-
-    <div class="frame-30 showcase-card reveal-on-scroll">
-      <div class="rectangle-15"></div>
-      <div class="text-wrapper-25">BUSINESS ANALYTICS</div>
-      <p class="text-wrapper-26">Get a clear view of your business performance, top services, transaction volume, and growth over time.</p>
-      <div class="ellipse-2"><img class="image" src="img/image-1-3.png" alt="" /></div>
-    </div>
-
-    <div class="frame-31 showcase-card reveal-on-scroll">
-      <div class="rectangle-15"></div>
-      <div class="text-wrapper-25">MULTI-OUTLET MANAGEMENT</div>
-      <p class="text-wrapper-26">Monitor outlet performance, manage operations, and access business reports without switching between multiple systems.</p>
-      <div class="ellipse-2"><img class="image" src="img/image-1-5.png" alt="" /></div>
-    </div>
-
-    <div class="frame-32 showcase-card reveal-on-scroll">
-      <div class="rectangle-15"></div>
-      <div class="text-wrapper-25">CUSTOMER MANAGEMENT</div>
-      <p class="text-wrapper-26">Manage customer profiles, service history, total spending, and important information from one centralized workspace.</p>
-      <div class="ellipse-2"><img class="image" src="img/image-1-2.png" alt="" /></div>
-    </div>
-
-    <div class="frame-33 showcase-card reveal-on-scroll">
-      <div class="rectangle-15"></div>
-      <div class="text-wrapper-25">TRANSACTION HISTORY</div>
-      <p class="text-wrapper-26">Automatically record every transaction and access complete payment details without digging through scattered records.</p>
-      <div class="ellipse-2"><img class="image" src="img/image-1-6.png" alt="" /></div>
-    </div>
-
-    <!-- How It Works Interactive Stepper -->
-    <div class="frame-27 reveal-on-scroll">
-      <div class="text-wrapper-10">HOW IT WORKS</div>
-      <p class="text-wrapper-24">From check-in to pickup, without the chaos</p>
-    </div>
-
-    <div class="rectangle-16 interactive-preview-box"></div>
-    <div class="group-2 stepper-container reveal-on-scroll">
-      <div class="line-wrapper"><div class="interactive-line-progress"></div><img class="line" src="img/line-7.svg" alt="" /></div>
-      
-      <div class="frame-34 step-item active" data-step="1">
-        <div class="text-wrapper-27">1. Receive</div>
-        <p class="text-wrapper-28">Create an order and register the customer&#39;s item in seconds.</p>
-      </div>
-      <div class="frame-37 step-item" data-step="2">
-        <div class="text-wrapper-29">2. Process</div>
-        <p class="text-wrapper-30">Assign the service, price, and workflow automatically.</p>
-      </div>
-      <div class="frame-35 step-item" data-step="3">
-        <div class="text-wrapper-27">3. Track</div>
-        <p class="text-wrapper-28">Keep everyone updated as the item moves through each stage.</p>
-      </div>
-      <div class="frame-38 step-item" data-step="4">
-        <div class="text-wrapper-29">4. Notify</div>
-        <p class="text-wrapper-30">Know when an order is ready and keep your customer informed.</p>
-      </div>
-      <div class="frame-36 step-item" data-step="5">
-        <div class="text-wrapper-27">5. Complete</div>
-        <p class="text-wrapper-28">Complete the transaction and keep the entire history recorded.</p>
-      </div>
-    </div>
-
-    <!-- Interactive Pricing Section -->
-    <section class="frame-39 reveal-on-scroll">
-      <div class="frame-40">
-        <p class="text-wrapper-31">Choose the plan that fits your business</p>
-      </div>
-      
-      <!-- Interactive Billing Toggle -->
-      <div class="pricing-toggle-wrap">
-        <span class="toggle-label active" id="monthly-label">Bulanan</span>
-        <button class="toggle-btn" id="billing-toggle" aria-label="Toggle billing frequency">
-          <div class="toggle-ball"></div>
-        </button>
-        <span class="toggle-label" id="annual-label">Tahunan <span class="discount-badge">Hemat 20%</span></span>
-      </div>
-
-      <div class="frame-41">
-        <!-- Basic Plan -->
-        <div class="frame-42 pricing-card">
-          <div class="rectangle-17"></div>
-          <div class="frame-43">
-            <div class="frame-44">
-              <img class="image-2" src="img/image-2.png" alt="" />
-              <img class="image-2" src="img/image-3.png" alt="" />
-              <img class="image-2" src="img/image-4.png" alt="" />
-              <img class="image-2" src="img/image-5.png" alt="" />
-              <img class="image-2" src="img/image-6.png" alt="" />
-            </div>
-            <div class="frame-45">
-              <div class="text-wrapper-32">Dashboard Standar</div>
-              <div class="text-wrapper-33">Pencatatan Transaksi Dasar</div>
-              <div class="text-wrapper-34">Kelola 1 Outlet</div>
-              <div class="text-wrapper-34">Maksimal 1 Karyawan</div>
-              <div class="text-wrapper-33">Riwayat Transaksi (30 Hari)</div>
-            </div>
-          </div>
-          <img class="rectangle-18" src="img/rectangle-42.svg" alt="" />
-          <div class="frame-46">
-            <p class="text-wrapper-32">For small businesses getting organized.</p>
-            <button class="frame-47 pricing-cta">
-              <span class="text-wrapper-35">Pilih Paket</span>
-            </button>
-          </div>
-          <p class="text-wrapper-36 price-val" data-monthly="Rp 99.000 / 30 Hari" data-annual="Rp 79.000 / Bulan">Rp 99.000 / 30 Hari</p>
-          <div class="frame-48">
-            <div class="text-wrapper-37">Basic</div>
-          </div>
-        </div>
-
-        <!-- Pro Plan (Featured) -->
-        <div class="frame-49 pricing-card featured">
-          <div class="popular-ribbon">⭐ MOST POPULAR</div>
-          <div class="rectangle-19"></div>
-          <div class="frame-50">
-            <div class="frame-44">
-              <img class="image-2" src="img/image-2-2.png" alt="" />
-              <img class="image-2" src="img/image-3-3.png" alt="" />
-              <img class="image-2" src="img/image-4-3.png" alt="" />
-              <img class="image-2" src="img/image-5-2.png" alt="" />
-              <img class="image-2" src="img/image-6-3.png" alt="" />
-            </div>
-            <div class="frame-45">
-              <div class="text-wrapper-32">Semua Fitur Basic</div>
-              <div class="text-wrapper-34">Kelola Multi-Outlet</div>
-              <div class="text-wrapper-34">Karyawan Tanpa Batas</div>
-              <div class="text-wrapper-38">Laporan & Analitik Keuangan</div>
-              <div class="text-wrapper-33">Riwayat Transaksi Tanpa Batas</div>
-            </div>
-          </div>
-          <img class="rectangle-18" src="img/image.svg" alt="" />
-          <div class="frame-46">
-            <div class="text-wrapper-32">For Growing Businesses</div>
-            <button class="frame-51 pricing-cta highlight">
-              <span class="text-wrapper-35">Pilih Pro</span>
-            </button>
-          </div>
-          <p class="text-wrapper-39 price-val" data-monthly="Rp 199.000 / 30 Hari" data-annual="Rp 159.000 / Bulan">Rp 199.000 / 30 Hari</p>
-          <div class="frame-52">
-            <div class="text-wrapper-40">Pro</div>
-          </div>
-        </div>
-
-        <!-- Enterprise Plan -->
-        <div class="frame-49 pricing-card">
-          <div class="rectangle-19"></div>
-          <div class="frame-50">
-            <div class="frame-44">
-              <img class="image-2" src="img/image-2-3.png" alt="" />
-              <img class="image-2" src="img/image-3-2.png" alt="" />
-              <img class="image-2" src="img/image-4-2.png" alt="" />
-              <img class="image-2" src="img/image.png" alt="" />
-              <img class="image-2" src="img/image-6-2.png" alt="" />
-            </div>
-            <div class="frame-45">
-              <div class="text-wrapper-32">Semua Fitur Pro</div>
-              <div class="text-wrapper-33">Custom API & Integrasi</div>
-              <div class="text-wrapper-34">Dedicated Account Manager</div>
-              <div class="text-wrapper-34">Custom Domain & Branding</div>
-              <div class="text-wrapper-33">SLA 99.9% Support 24/7</div>
-            </div>
-          </div>
-          <img class="rectangle-18" src="img/rectangle-42-2.svg" alt="" />
-          <div class="frame-46">
-            <p class="text-wrapper-32">For businesses ready to scale</p>
-            <button class="frame-47 pricing-cta">
-              <span class="text-wrapper-35">Hubungi Sales</span>
-            </button>
-          </div>
-          <p class="text-wrapper-41 price-val" data-monthly="Rp 399.000 / 30 Hari" data-annual="Rp 319.000 / Bulan">Rp 399.000 / 30 Hari</p>
-          <div class="frame-53">
-            <div class="text-wrapper-42">Enterprise</div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Footer CTA -->
-    <footer class="frame-54 reveal-on-scroll">
-      <div class="frame-55">
-        <p class="READY-TO-WORK shimmer-text">
-          <span class="span">READY TO WORK </span>
-          <span class="text-wrapper-43">SMARTER?</span>
-        </p>
-        <p class="text-wrapper-44">Bring your orders, customers, payments, and operations into one powerful platform.</p>
-      </div>
-      <button class="frame-56 interactive-btn-pulse" onclick="showToast('🎉 Akun demo Anda sedang disiapkan!')">
-        <div class="text-wrapper-45">Start Now →</div>
-      </button>
-    </footer>
-  </div>
-
-  <!-- Toast Notification Modal -->
-  <div id="toast-notify" class="toast-notification"></div>
-
-  <!-- Interactive JavaScript -->
-  <script src="script.js"></script>
+<body data-colors-mode="light">
+<main class="macbook-pro">
+<div class="rectangle" aria-hidden="true"></div>
+<div class="div" aria-hidden="true"></div>
+<div class="rectangle-2" aria-hidden="true"></div>
+<div class="rectangle-3" aria-hidden="true"></div>
+<div class="rectangle-4" aria-hidden="true"></div>
+<div class="rectangle-5" aria-hidden="true"></div>
+<div class="rectangle-6" aria-hidden="true"></div>
+<div class="rectangle-7" aria-hidden="true"></div>
+<div class="ellipse" aria-hidden="true"></div>
+<header class="frame">
+<nav class="navbar" aria-label="Primary navigation">
+<a class="text-wrapper" href="#product">Product</a>
+<a class="text-wrapper" href="#features">Features</a>
+<a class="text-wrapper" href="#solutions">Solutions</a>
+<a class="text-wrapper" href="#pricing">Pricing</a>
+<a class="text-wrapper" href="#resources">Resources</a>
+</nav>
+<div class="frame-2">
+<a class="text-wrapper-2" href="#login">Log in</a>
+<a class="text-wrapper-3" href="#get-started">Get Started</a>
+</div>
+</header>
+<section class="frame-3" id="product" aria-labelledby="hero-heading">
+<div class="frame-4">
+<p class="text-wrapper-4">ALL-IN-ONE BUSINESS MANAGEMENT PLATFORM</p>
+<h1 class="p" id="hero-heading">Run Your Cleaning Business Smarter</h1>
+<p class="text-wrapper-5">ALL-IN-ONE BUSINESS MANAGEMENT PLATFORM</p>
+</div>
+<div class="frame-5">
+<a class="div-wrapper" href="#get-started"> <span class="text-wrapper-6">Start Free</span> </a>
+<a class="frame-6" href="#features"> <span class="text-wrapper-6">Explore Features →</span> </a>
+</div>
+</section>
+<div class="group" aria-hidden="true">
+<div class="rectangle-8"></div>
+<div class="rectangle-9"></div>
+<div class="rectangle-10"></div>
+<div class="rectangle-11"></div>
+</div>
+<div class="rectangle-12" aria-hidden="true"></div>
+<div class="rectangle-13" aria-hidden="true"></div>
+<img class="img" src="img/ellipse-20.svg" alt="" aria-hidden="true">
+<section class="frame-7" aria-labelledby="business-moving-heading">
+<div class="frame-8">
+<h2 class="text-wrapper-7" id="business-moving-heading">Built for businesses that keep things moving</h2>
+<p class="text-wrapper-8">From growing local shops to multi-outlet operations, CLEANFLOW helps businesses stay organized, efficient, and ready to scaleh</p>
+</div>
+<dl class="frame-9">
+<div class="frame-10">
+<dt class="text-wrapper-9">1,284+</dt>
+<dd class="text-wrapper-8">Orders Managed</dd>
+</div>
+<div class="frame-10">
+<dt class="text-wrapper-9">98.6%</dt>
+<dd class="text-wrapper-8">Order Accuracy</dd>
+</div>
+<div class="frame-10">
+<dt class="text-wrapper-9">32+</dt>
+<dd class="text-wrapper-8">Active Businesses</dd>
+</div>
+<div class="frame-11">
+<dt class="text-wrapper-9">12</dt>
+<dd class="text-wrapper-8">Service Categories</dd>
+</div>
+</dl>
+</section>
+<section class="frame-12" aria-labelledby="manual-process-heading">
+<div class="frame-13">
+<h2 class="text-wrapper-10" id="manual-process-heading">Your business shouldn't run on notebooks and spreadsheets.</h2>
+<p class="text-wrapper-11">When orders grow, manual processes start getting expensive</p>
+</div>
+<ul class="frame-14">
+<li class="text-wrapper-12">Lost order information</li>
+<li class="text-wrapper-13">Difficult item tracking</li>
+<li class="text-wrapper-13">Manual payment records</li>
+<li class="text-wrapper-13">Customer data scattered everywhere</li>
+<li class="text-wrapper-13">No clear view of business performance</li>
+</ul>
+</section>
+<section class="frame-15" aria-labelledby="control-heading">
+<div class="rectangle-14" aria-hidden="true"></div>
+<div class="frame-16">
+<div class="frame-17">
+<h2 class="text-wrapper-14" id="control-heading">One system. Complete control</h2>
+<p class="CLEANFLOW-brings">CLEANFLOW brings your entire operation into one connected workspace — from the moment an item arrives until it's picked up.</p>
+</div>
+<div class="frame-18">
+<p class="text-wrapper-15">Orders. Customers. Payments. Analytics.</p>
+</div>
+</div>
+</section>
+<section class="frame-19" id="solutions" aria-labelledby="services-heading">
+<div class="frame-20">
+<p class="text-wrapper-16">BUILT FOR YOUR BUSINESS</p>
+<h2 class="text-wrapper-17" id="services-heading">One platform. Every service.</h2>
+<p class="text-wrapper-18">Whether you clean shoes, helmets, strollers, luggage, or something completely different, CLEANFLOW adapts to the way your business works.</p>
+</div>
+<div class="frame-21">
+<article class="frame-22">
+<h3 class="text-wrapper-19">Shoe Care</h3>
+<p class="text-wrapper-20">Deep cleaning, restoration, and maintenance.</p>
+</article>
+<article class="frame-22">
+<h3 class="text-wrapper-19">Helmet Care</h3>
+<p class="text-wrapper-20">Track cleaning and treatment orders with ease.</p>
+</article>
+<article class="frame-22">
+<h3 class="text-wrapper-19">Stroller Care</h3>
+<p class="text-wrapper-20">Manage every item from intake to pickup.</p>
+</article>
+<article class="frame-22">
+<h3 class="text-wrapper-19">Luggage Care</h3>
+<p class="text-wrapper-20">Keep high-value items organized and traceable.</p>
+</article>
+<article class="frame-22">
+<h3 class="text-wrapper-19">Sandal</h3>
+<p class="text-wrapper-20">Manage multiple services under one system.</p>
+</article>
+<article class="frame-22">
+<h3 class="text-wrapper-21">Custom Services</h3>
+<p class="text-wrapper-20">Create your own service types, pricing, and workflows.</p>
+</article>
+</div>
+<div class="frame-23">
+<a class="frame-24" href="#get-started">
+<span class="text-wrapper-22">Create your own workflow →</span>
+</a>
+<img class="frame-25" src="img/frame-39.svg" alt="" aria-hidden="true">
+</div>
+</section>
+<img class="frame-26" src="img/frame-26.svg" alt="" aria-hidden="true">
+<section id="features" aria-labelledby="feature-showcase-heading">
+<h2 class="text-wrapper-23" id="feature-showcase-heading">FEATURE SHOWCASE</h2>
+<article class="frame-28">
+<div class="rectangle-15" aria-hidden="true"></div>
+<h3 class="text-wrapper-25">FINANCIAL REPORTING</h3>
+<p class="text-wrapper-26">Get a clearer picture of your business finances and make every financial decision with confidence.</p>
+<div class="ellipse-2" aria-hidden="true"></div>
+<img class="image" src="img/image-1-4.png" alt="" aria-hidden="true">
+</article>
+<article class="frame-29">
+<div class="rectangle-15" aria-hidden="true"></div>
+<h3 class="text-wrapper-25">INVENTORY REPORTING</h3>
+<p class="text-wrapper-26">Monitor inventory levels, usage, and supply needs to keep your daily operations running smoothly.</p>
+<div class="ellipse-2" aria-hidden="true"></div>
+<img class="image" src="img/image-1.png" alt="" aria-hidden="true">
+</article>
+<article class="frame-30">
+<div class="rectangle-15" aria-hidden="true"></div>
+<h3 class="text-wrapper-25">BUSINESS ANALYTICS</h3>
+<p class="text-wrapper-26">Get a clear view of your business performance, top services, transaction volume, and growth over time.</p>
+<div class="ellipse-2" aria-hidden="true"></div>
+<img class="image" src="img/image-1-3.png" alt="" aria-hidden="true">
+</article>
+<article class="frame-31">
+<div class="rectangle-15" aria-hidden="true"></div>
+<h3 class="text-wrapper-25">MULTI-OUTLET MANAGEMENT</h3>
+<p class="text-wrapper-26">Monitor outlet performance, manage operations, and access business reports without switching between multiple systems.</p>
+<div class="ellipse-2" aria-hidden="true"></div>
+<img class="image" src="img/image-1-5.png" alt="" aria-hidden="true">
+</article>
+<article class="frame-32">
+<div class="rectangle-15" aria-hidden="true"></div>
+<h3 class="text-wrapper-25">CUSTOMER MANAGEMENT</h3>
+<p class="text-wrapper-26">Manage customer profiles, service history, total spending, and important information from one centralized workspace.</p>
+<div class="ellipse-2" aria-hidden="true"></div>
+<img class="image" src="img/image-1-2.png" alt="" aria-hidden="true">
+</article>
+<article class="frame-33">
+<div class="rectangle-15" aria-hidden="true"></div>
+<h3 class="text-wrapper-25">TRANSACTION HISTORY</h3>
+<p class="text-wrapper-26">Automatically record every transaction and access complete payment details without digging through scattered records.</p>
+<div class="ellipse-2" aria-hidden="true"></div>
+<img class="image" src="img/image-1-6.png" alt="" aria-hidden="true">
+</article>
+</section>
+<section id="resources" aria-labelledby="how-it-works-heading">
+<div class="frame-27">
+<p class="text-wrapper-10">HOW IT WORKS</p>
+<h2 class="text-wrapper-24" id="how-it-works-heading">From check-in to pickup, without the chaos</h2>
+</div>
+<div class="rectangle-16" aria-hidden="true"></div>
+<div class="group-2">
+<div class="line-wrapper" aria-hidden="true">
+<img class="line" src="img/line-7.svg" alt="">
+</div>
+<article class="frame-34">
+<h3 class="text-wrapper-27">Receive</h3>
+<p class="text-wrapper-28">Create an order and register the customer's item in seconds.</p>
+</article>
+<article class="frame-35">
+<h3 class="text-wrapper-27">Track</h3>
+<p class="text-wrapper-28">Keep everyone updated as the item moves through each stage.</p>
+</article>
+<article class="frame-36">
+<h3 class="text-wrapper-27">Complete</h3>
+<p class="text-wrapper-28">Complete the transaction and keep the entire history recorded.</p>
+</article>
+<article class="frame-37">
+<h3 class="text-wrapper-29">Process</h3>
+<p class="text-wrapper-30">Assign the service, price, and workflow automatically.</p>
+</article>
+<article class="frame-38">
+<h3 class="text-wrapper-29">Notify</h3>
+<p class="text-wrapper-30">Know when an order is ready and keep your customer informed.</p>
+</article>
+</div>
+</section>
+<section class="frame-39" id="pricing" aria-labelledby="pricing-heading">
+<div class="frame-40">
+<h2 class="text-wrapper-31" id="pricing-heading">Choose the plan that fits your business</h2>
+</div>
+<div class="frame-41">
+<article class="frame-42">
+<div class="rectangle-17" aria-hidden="true"></div>
+<div class="frame-43">
+<div class="frame-44" aria-hidden="true">
+<img class="image-2" src="img/image-2.png" alt="">
+<img class="image-2" src="img/image-3.png" alt="">
+<img class="image-2" src="img/image-4.png" alt="">
+<img class="image-2" src="img/image-5.png" alt="">
+<img class="image-2" src="img/image-6.png" alt="">
+</div>
+<ul class="frame-45">
+<li class="text-wrapper-32">Dasboard Standar</li>
+<li class="text-wrapper-33">Pencatatan Transaksi Dasar</li>
+<li class="text-wrapper-34">Kelola 1 Outlet</li>
+<li class="text-wrapper-34">Maksimal 1 Karyawan</li>
+<li class="text-wrapper-33">Riwayat Transaksi (30 Hari)</li>
+</ul>
+</div>
+<img class="rectangle-18" src="img/rectangle-42.svg" alt="" aria-hidden="true">
+<div class="frame-46">
+<p class="text-wrapper-32">For small businesses getting organized.</p>
+<a class="frame-47" href="#get-started"><span class="text-wrapper-35">Start Hiring</span></a>
+</div>
+<p class="text-wrapper-36">Rp 99.000 / 30 Hari</p>
+<div class="frame-48">
+<p class="text-wrapper-37">Basic</p>
+</div>
+</article>
+<article class="frame-49">
+<div class="rectangle-19" aria-hidden="true"></div>
+<div class="frame-50">
+<div class="frame-44" aria-hidden="true">
+<img class="image-2" src="img/image-2-2.png" alt="">
+<img class="image-2" src="img/image-3-3.png" alt="">
+<img class="image-2" src="img/image-4-3.png" alt="">
+<img class="image-2" src="img/image-5-2.png" alt="">
+<img class="image-2" src="img/image-6-3.png" alt="">
+</div>
+<ul class="frame-45">
+<li class="text-wrapper-32">Semua Fitur Basic</li>
+<li class="text-wrapper-34">Kelola Multi-Outlet</li>
+<li class="text-wrapper-34">Karyawam Tanpa Batas</li>
+<li class="text-wrapper-38">Laporan Dan Analitik Keuangan</li>
+<li class="text-wrapper-33">Riwayat Transaksi (30 Hari)</li>
+</ul>
+</div>
+<img class="rectangle-18" src="img/image.svg" alt="" aria-hidden="true">
+<div class="frame-46">
+<p class="text-wrapper-32">For small Growing Business</p>
+<a class="frame-51" href="#get-started"><span class="text-wrapper-35">Start Hiring</span></a>
+</div>
+<p class="text-wrapper-39">Rp 199.000 / 30 Hari</p>
+<div class="frame-52">
+<p class="text-wrapper-40">Pro</p>
+</div>
+</article>
+<article class="frame-49">
+<div class="rectangle-19" aria-hidden="true"></div>
+<div class="frame-50">
+<div class="frame-44" aria-hidden="true">
+<img class="image-2" src="img/image-2-3.png" alt="">
+<img class="image-2" src="img/image-3-2.png" alt="">
+<img class="image-2" src="img/image-4-2.png" alt="">
+<img class="image-2" src="img/image.png" alt="">
+<img class="image-2" src="img/image-6-2.png" alt="">
+</div>
+<ul class="frame-45">
+<li class="text-wrapper-32">Dasboard Standar</li>
+<li class="text-wrapper-33">Pencatatan Transaksi Dasar</li>
+<li class="text-wrapper-34">Kelola 1 Outlet</li>
+<li class="text-wrapper-34">Maksimal 1 Karyawan</li>
+<li class="text-wrapper-33">Riwayat Transaksi (30 Hari)</li>
+</ul>
+</div>
+<img class="rectangle-18" src="img/rectangle-42-2.svg" alt="" aria-hidden="true">
+<div class="frame-46">
+<p class="text-wrapper-32">For businesses ready to scale</p>
+<a class="frame-47" href="#get-started"><span class="text-wrapper-35">Start Hiring</span></a>
+</div>
+<p class="text-wrapper-41">Rp 399.000 / 30 Hari</p>
+<div class="frame-53">
+<p class="text-wrapper-42">Enterprise</p>
+</div>
+</article>
+</div>
+</section>
+<footer class="frame-54" id="get-started">
+<div class="frame-55">
+<h2 class="READY-TO-WORK">
+<span class="span">READY TO WORK </span>
+<span class="text-wrapper-43">SMARTER?</span>
+</h2>
+<p class="text-wrapper-44">Bring your orders, customers, payments, and operations into one powerful platform.</p>
+</div>
+<a class="frame-56" href="#login">
+<span class="text-wrapper-45">Start Now →</span>
+</a>
+</footer>
+</main>
 </body>
-<script>
-    document.addEventListener("DOMContentLoaded", () => {
-  // 1. Scroll Reveal Intersection Observer
-  const revealElements = document.querySelectorAll(".reveal-on-scroll");
-  const revealObserver = new IntersectionObserver(
-    (entries, observer) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("is-revealed");
-          observer.unobserve(entry.target);
-        }
-      });
-    },
-    { threshold: 0.1 }
-  );
-  revealElements.forEach((el) => revealObserver.observe(el));
-
-  // 2. Animated Stats Counter
-  const counters = document.querySelectorAll(".counter");
-  let animated = false;
-  const statsSection = document.querySelector(".frame-7");
-
-  const counterObserver = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting && !animated) {
-          animated = true;
-          counters.forEach((counter) => {
-            const target = parseFloat(counter.getAttribute("data-target"));
-            const decimals = parseInt(counter.getAttribute("data-decimals") || "0", 10);
-            const suffix = counter.getAttribute("data-suffix") || "";
-            const duration = 2000;
-            const startTime = performance.now();
-
-            function updateCounter(currentTime) {
-              const elapsed = currentTime - startTime;
-              const progress = Math.min(elapsed / duration, 1);
-              // easeOutQuart
-              const easeProgress = 1 - Math.pow(1 - progress, 4);
-              const currentVal = target * easeProgress;
-
-              counter.innerText =
-                (decimals > 0 ? currentVal.toFixed(decimals) : Math.floor(currentVal).toLocaleString()) + suffix;
-
-              if (progress < 1) {
-                requestAnimationFrame(updateCounter);
-              } else {
-                counter.innerText = (decimals > 0 ? target.toFixed(decimals) : target.toLocaleString()) + suffix;
-              }
-            }
-            requestAnimationFrame(updateCounter);
-          });
-        }
-      });
-    },
-    { threshold: 0.3 }
-  );
-  if (statsSection) counterObserver.observe(statsSection);
-
-  // 3. Interactive Stepper Timeline ("How It Works")
-  const stepItems = document.querySelectorAll(".step-item");
-  stepItems.forEach((step) => {
-    step.addEventListener("mouseenter", () => {
-      stepItems.forEach((s) => s.classList.remove("active"));
-      step.classList.add("active");
-    });
-  });
-
-  // 4. Pricing Switcher (Monthly vs Annual)
-  const billingToggle = document.getElementById("billing-toggle");
-  const monthlyLabel = document.getElementById("monthly-label");
-  const annualLabel = document.getElementById("annual-label");
-  const priceVals = document.querySelectorAll(".price-val");
-  let isAnnual = false;
-
-  if (billingToggle) {
-    const handleToggle = () => {
-      isAnnual = !isAnnual;
-      billingToggle.classList.toggle("active", isAnnual);
-      monthlyLabel.classList.toggle("active", !isAnnual);
-      annualLabel.classList.toggle("active", isAnnual);
-
-      priceVals.forEach((p) => {
-        p.style.opacity = "0";
-        setTimeout(() => {
-          p.innerText = isAnnual ? p.getAttribute("data-annual") : p.getAttribute("data-monthly");
-          p.style.opacity = "1";
-        }, 150);
-      });
-    };
-
-    billingToggle.addEventListener("click", handleToggle);
-    document.querySelector(".pricing-toggle-wrap").addEventListener("click", (e) => {
-      if (e.target !== billingToggle && !billingToggle.contains(e.target)) {
-        handleToggle();
-      }
-    });
-  }
-
-  // 5. Pricing Card CTA Feedback
-  const pricingButtons = document.querySelectorAll(".pricing-cta");
-  pricingButtons.forEach((btn) => {
-    btn.addEventListener("click", () => {
-      showToast("🚀 Paket dipilih! Mengarahkan ke formulir aktivasi...");
-    });
-  });
-
-  // 6. 3D Parallax Tilt Effect on Hero Cards
-  const heroGroup = document.querySelector(".hero-cards-container");
-  if (heroGroup) {
-    heroGroup.addEventListener("mousemove", (e) => {
-      const { left, top, width, height } = heroGroup.getBoundingClientRect();
-      const x = (e.clientX - left) / width - 0.5;
-      const y = (e.clientY - top) / height - 0.5;
-
-      document.querySelectorAll(".tilt-card").forEach((card, idx) => {
-        const factor = (idx + 1) * 8;
-        card.style.transform = `translate3d(${x * factor}px, ${y * factor}px, 0)`;
-      });
-    });
-
-    heroGroup.addEventListener("mouseleave", () => {
-      document.querySelectorAll(".tilt-card").forEach((card) => {
-        card.style.transform = "";
-      });
-    });
-  }
-});
-
-// Helper: Smooth Scroll
-function scrollToSection(selector) {
-  const el = document.querySelector(selector);
-  if (el) {
-    el.scrollIntoView({ behavior: "smooth", block: "start" });
-  }
-}
-
-// Helper: Toast Notification
-function showToast(message) {
-  const toast = document.getElementById("toast-notify");
-  if (!toast) return;
-  toast.innerText = message;
-  toast.classList.add("show");
-  setTimeout(() => {
-    toast.classList.remove("show");
-  }, 3500);
-}
-</script>
 </html>
