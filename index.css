@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 .macbook-pro {
   background-color: #ffffff;
   overflow: hidden;
