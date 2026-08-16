@@ -230,24 +230,18 @@
     -20px 188px 53px transparent;
 }
 
-.macbook-pro .text-wrapper-7 {
-  font-family: "Inter-Medium", Helvetica;
-  font-weight: 500;
-  color: var(--colors-grays-gray-6);
-  font-size: 20px;
-  white-space: nowrap;
-  position: relative;
-  width: fit-content;
-  margin-top: -1px;
-  letter-spacing: 0;
-  line-height: normal;
-  cursor: pointer;
+button {
+ position: relative;
+ display: inline-block;
+ cursor: pointer;
  outline: none;
  border: 0;
  vertical-align: middle;
  text-decoration: none;
  background: transparent;
  padding: 0;
+ font-size: inherit;
+ font-family: inherit;
 }
 
 button.learn-more {
@@ -322,6 +316,19 @@ button:hover .circle .icon.arrow {
 
 button:hover .button-text {
  color: #fff;
+}
+
+.macbook-pro .text-wrapper-7 {
+  font-family: "Inter-Medium", Helvetica;
+  font-weight: 500;
+  color: var(--colors-grays-gray-6);
+  font-size: 20px;
+  white-space: nowrap;
+  position: relative;
+  width: fit-content;
+  margin-top: -1px;
+  letter-spacing: 0;
+  line-height: normal;
 }
 
 .macbook-pro .frame-8 {
@@ -898,51 +905,3 @@ button:hover .button-text {
   line-height: normal;
 }
 
-@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
-* {
-  -webkit-font-smoothing: antialiased;
-  box-sizing: border-box;
-}
-html,
-body {
-  margin: 0px;
-  min-height: 100%;
-}
-/* a blue color as a generic focus style */
-button:focus-visible {
-  outline: 2px solid #4a90e2 !important;
-  outline: -webkit-focus-ring-color auto 5px !important;
-}
-a {
-  text-decoration: none;
-}
-/* @FONTWARNING[{"type": "restricted", "family": "Inter-SemiBold", "weight": "600", "style": "normal", "allowsCrossOrigin": false}] */
-
-@font-face {
-  font-family: "Inter-SemiBold";
-  src: local("Inter-SemiBold");
-}
-/* @FONTWARNING[{"type": "restricted", "family": "Inter-Regular", "weight": "400", "style": "normal", "allowsCrossOrigin": false}] */
-
-@font-face {
-  font-family: "Inter-Regular";
-  src: local("Inter-Regular");
-}
-/* @FONTWARNING[{"type": "restricted", "family": "Inter-Medium", "weight": "500", "style": "normal", "allowsCrossOrigin": false}] */
-
-@font-face {
-  font-family: "Inter-Medium";
-  src: local("Inter-Medium");
-}
-/* @FONTWARNING[{"type": "restricted", "family": "Inter-Bold", "weight": "700", "style": "normal", "allowsCrossOrigin": false}] */
-
-@font-face {
-  font-family: "Inter-Bold";
-  src: local("Inter-Bold");
-}
-/* @FONTWARNING[{"type": "restricted", "family": "Inter-Light", "weight": "300", "style": "normal", "allowsCrossOrigin": false}] */
-
-@font-face {
-  font-family: "Inter-Light";
-  src: local("Inter-Light");
-}
